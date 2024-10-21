@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avtoalfa</title>
+<script defer src="script.348c96f20bec89176a99.js"></script></head>
+<body>
+    <main class="main catalog-page">
+        <div class="container">
+            <div class="filters">
+                <h2 class="filters__title">бренды</h2>
+                <div class="input-wrapper ">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5493 19.5493L28.6683 28.6683M22.3328 12.8295C22.3328 18.078 18.078 22.3328 12.8295 22.3328C7.58094 22.3328 3.32617 18.078 3.32617 12.8295C3.32617 7.58094 7.58094 3.32617 12.8295 3.32617C18.078 3.32617 22.3328 7.58094 22.3328 12.8295Z" stroke="#B2ADAD" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <input type="text" class="search-brand" placeholder="Поиск по брендам">
+                </div>
+                <ul class="filters__list"></ul>
+            </div>
+            
+            <div class="catalog">
+                <div class="select">
+                    <div class="select__header">
+                        <button class="select__title"></button>
+                        <input type="hidden">
+                    </div>
+                    <div class="select__list">
+                        <ul></ul>
+                    </div>
+                </div>
+
+                <div class="chips">Бренды: АктивПром-Плюс </div>
+                <div class="catalog__header">
+                    <span class="catalog__header-title">Бренд, артикул, наименование</span>
+                    <span>Доставка</span>
+                    <span>Наличие</span>
+                    <span>Цена за ед.</span>
+                    <span>Кратность</span>
+                </div>
+                
+                <div class="catalog__cards" id="product-list">
+                    <!-- <div class="catalog__card">
+                        <div class="catalog__card-img">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.33594 45.5913L15.1952 39.732C16.965 37.9622 19.8345 37.9622 21.6043 39.732L23.1808 41.3085C25.3202 43.4479 28.9151 42.9302 30.3639 40.274L37.469 27.248C39.1011 24.2559 43.3278 24.0684 45.2184 26.9043L54.6551 41.0594M13.8679 54.6551H50.1232C52.6261 54.6551 54.6551 52.6261 54.6551 50.1232V13.8679C54.6551 11.3649 52.6261 9.33594 50.1232 9.33594H13.8679C11.3649 9.33594 9.33594 11.3649 9.33594 13.8679V50.1232C9.33594 52.6261 11.3649 54.6551 13.8679 54.6551ZM28.5521 24.0647C28.5521 27.1933 26.0158 29.7296 22.8872 29.7296C19.7585 29.7296 17.2223 27.1933 17.2223 24.0647C17.2223 20.936 19.7585 18.3998 22.8872 18.3998C26.0158 18.3998 28.5521 20.936 28.5521 24.0647Z" stroke="#B2ADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                            <img src="" alt=""> 
+                        </div>
+                       <div class="">
+                        <h3 class="catalog__card-title"><a href="#!">Denckermann</a> <span>6PK2120</span></h3>
+                            <ul class="catalog__card-list">
+                                <li class="catalog__card-item">
+                                    <h4><a href="#!">Здесь будет наименование товара, которое может быть как длинным, так и коротким, очень длинное название...Здесь будет наименование товара, которое может быть как длинным, так и коротким, очень длинное название...Здесь будет наименование товара, которое может быть как длинным, так и коротким, очень длинное название...Здесь будет наименование товара, которое может быть как длинным, так и коротким, очень длинное название...</a></h4>
+                                    <span>7 дней</span>
+                                    <span>20 шт.</span>
+                                    <span class="price">2 153 ₽</span>
+                                    <div class="catalog__card-order">
+                                        <input type="number" min="1" value="1">
+                                        <button>
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.79134 20.2075L6.48966 3.89453H3.125M7.25268 9.22637H27.5579C28.2192 9.22637 28.6984 9.85682 28.5214 10.494L25.7099 20.6155C25.45 21.5513 24.5979 22.1989 23.6267 22.1989H10.937C9.85782 22.1989 8.9439 21.4032 8.79544 20.3343L7.25268 9.22637Z" stroke="#727271" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12.8951 26.5296C12.8951 27.4002 12.1893 28.106 11.3186 28.106C10.448 28.106 9.74219 27.4002 9.74219 26.5296C9.74219 25.6589 10.448 24.9531 11.3186 24.9531C12.1893 24.9531 12.8951 25.6589 12.8951 26.5296Z" fill="#727271"/>
+                                                <path d="M24.9008 26.5296C24.9008 27.4002 24.195 28.106 23.3243 28.106C22.4537 28.106 21.7479 27.4002 21.7479 26.5296C21.7479 25.6589 22.4537 24.9531 23.3243 24.9531C24.195 24.9531 24.9008 25.6589 24.9008 26.5296Z" fill="#727271"/>
+                                            </svg>                                        
+                                        </button>
+                                    </div>
+                                </li>                                
+                            </ul>
+                       </div>
+                    </div> -->
+                </div>
+
+                <button class="btn" id="show-more">Показать еще</button>
+                
+                <div class="pagination">
+                    <button class="pagination-btn prev" id="prev-page">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.16 14.3367L4.84 8.01797L11.16 1.66334" stroke="#B2ADAD" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <button class="pagination-btn next" id="next-page">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.83984 2.4613L11.1583 8.77983L4.83984 15.1343" stroke="#539DED" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

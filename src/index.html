@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avtoalfa</title>
+</head>
+<body>
+    <main class="main catalog-page">
+        <div class="container">
+            <div class="filters-wrapper">
+                <div class="filters">
+                    <form class="filter" id="form">
+                        <h2 class="filters__title">бренды</h2>
+                        <div class="input-wrapper ">
+                            <button class="search-brand__btn">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.5493 19.5493L28.6683 28.6683M22.3328 12.8295C22.3328 18.078 18.078 22.3328 12.8295 22.3328C7.58094 22.3328 3.32617 18.078 3.32617 12.8295C3.32617 7.58094 7.58094 3.32617 12.8295 3.32617C18.078 3.32617 22.3328 7.58094 22.3328 12.8295Z" stroke="#B2ADAD" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>                        
+                            <input type="text" class="search-brand" placeholder="Поиск по брендам">
+                        <button class="clear-search">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.5" d="M7.57105 7.57105L12.0081 12.0081M12.0081 12.0081L16.4451 16.4451M12.0081 12.0081L7.57105 16.4451M12.0081 12.0081L16.4451 7.57105M21.5159 12.0079C21.5159 17.259 17.259 21.5159 12.0079 21.5159C6.75685 21.5159 2.5 17.259 2.5 12.0079C2.5 6.75685 6.75685 2.5 12.0079 2.5C17.259 2.5 21.5159 6.75685 21.5159 12.0079Z" stroke="#D7262E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                                
+                        </div>
+                        <ul class="filters__list"></ul>
+                        <div class="filters-apply">
+                            <span class="total">250 000</span><br>
+                            товаров показать
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            
+            <div class="catalog">
+                <div class="select">
+                    <div class="select__header">
+                        <button class="select__title"></button>
+                        <input type="hidden" value="0">
+                    </div>
+                    <div class="select__list">
+                        <ul></ul>
+                    </div>
+                </div>
+
+                <div class="chips">Бренды: <span></span> </div>
+                <div class="catalog__header">
+                    <span class="catalog__header-title">Бренд, артикул, наименование</span>
+                    <span>Доставка</span>
+                    <span>Наличие</span>
+                    <span>Цена за ед.</span>
+                    <span>Кратность</span>
+                </div>
+                
+                <div class="catalog__cards" id="product-list"></div>
+
+                <div class="more-cards">
+                    <button class="btn" id="show-more">Показать еще</button>
+                    <div class="pagination">
+                        <button class="pagination-btn prev" id="prev-page">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.16 14.3367L4.84 8.01797L11.16 1.66334" stroke="#539DED" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="pagination__numbers"></div> 
+                        <button class="pagination-btn next" id="next-page">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83984 2.4613L11.1583 8.77983L4.83984 15.1343" stroke="#539DED" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>

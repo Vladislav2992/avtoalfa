@@ -1,0 +1,121 @@
+.filters
+    position: sticky
+    top: 10px
+    &__title
+        text-transform: uppercase
+        margin-bottom: 17px
+    &__list
+        display: flex
+        flex-direction: column
+        gap: 12px
+        padding: 6px 0
+        max-height: 386px
+        overflow-x: hidden
+        &::-webkit-scrollbar 
+            width: 7px
+        &::-webkit-scrollbar-track 
+            background: $light-grey
+            border-radius: 8px
+        &::-webkit-scrollbar-thumb 
+            background: $medium-grey
+            border-radius: 8px
+    &-apply
+        position: absolute
+        right: calc(-100% - 7px)
+        top: 140px
+        background: $red
+        color: $white
+        text-align: center
+        padding: 20px
+        border-radius: 5px
+        z-index: 10
+        cursor: pointer
+        @include shadow
+        transform: translateX(-50%) scale(0)
+        transition: transform .15s, background .15s
+        opacity: 0
+        &:hover
+            background: $red-medium
+            transform: translateX(-50%) scale(1)
+            opacity: 1
+        &.visible 
+            transform: translateX(-50%) scale(1)
+            opacity: 1
+        &::before 
+            content: ''
+            width: 0px
+            height: 0px
+            border-style: solid
+            border-width: 0 8px 9px 8px
+            border-color: transparent transparent $red transparent
+            display: block
+            position: absolute
+            top: 50%
+            transform: translateY(-50%) rotate(270deg)
+            left: -12px
+        .total
+            font-size: 22px
+            font-weight: 700
+.filter
+    position: relative       
+
+.input-wrapper
+    margin-bottom: 13px
+    position: relative
+    input
+        border: none
+        background: transparent  
+        padding: 0
+        font-family: inherit 
+        font-size: 14px
+        border: 1px solid $medium-grey  
+        border-radius: 5px
+        padding: 10px 35px 10px 52px
+        width: 100%
+        &:focus 
+            outline: none
+            box-shadow: 0 0 15px rgba(0,0,0, .1)
+        &::placeholder
+            color: $medium-grey
+    .search-brand__btn
+        background: transparent 
+        border: none
+        padding: 0
+        position: absolute
+        top: 3px
+        left: 10px
+    .clear-search
+        position: absolute
+        right: 10px
+        top: 7px
+        display: none
+        background: transparent
+        border: 0
+        padding: 0
+        &.visible
+            display: block
+.checkbox
+    display: none
+    &:checked + &__label::after
+        transform: scale(1)        
+    &__label
+        color: $grey 
+        padding-left: 28px
+        position: relative
+        display: inline-block
+        cursor: pointer
+        &::before,
+        &::after 
+            content: ''
+            position: absolute
+            top: -3px
+            left: 0 
+            width: 18px
+            height: 18px
+            border: 1px solid $medium-grey
+            border-radius: 4px
+        &::after 
+            background: $red url('img/checked.svg') no-repeat center
+            border-color: $red 
+            transition: transform .15s
+            transform: scale(0)     

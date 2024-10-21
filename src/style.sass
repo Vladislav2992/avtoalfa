@@ -1,0 +1,80 @@
+@import './sass/_reset'
+@import './sass/_vars'
+@import './sass/_fonts'
+html
+    scrollbar-gutter: stable
+
+body 
+    overflow-x: clip
+    position: relative
+    font-family: 'Tahoma', sans-serif
+    font-size: 14px
+    color: $black
+.container
+    max-width: 1500px
+    padding: 0 15px
+    margin: 0 auto
+.catalog-page
+    margin-top: 40px
+    .container
+        display: grid
+        grid-template-columns: 230px auto
+        gap: 16px
+    .select
+        margin-left: auto
+        margin-bottom: 16px
+.catalog__header
+    padding: 15px 20px
+    background: $light-grey-2
+    border-radius: 8px    
+    display: grid
+    grid-template-columns: auto 160px 110px 160px 90px
+    gap: 10px
+    margin-bottom: 20px
+.catalog__cards
+    margin-bottom: 90px
+.chips
+    display: inline-block
+    width: fit-content
+    padding: 7px 45px 7px 15px
+    border-radius: 20px
+    background: $red
+    color: $white
+    position: relative
+    font-size: 13px
+    cursor: pointer
+    transform: scale(0)
+    transition: transform .15s, background .15s
+    max-height: 0
+    &:hover
+        background: $red-medium
+    &.visible 
+        transform: scale(1)
+        margin-bottom: 20px
+        max-height: 50px
+    &::before
+        content: ''
+        position: absolute
+        width: 16px
+        height: 16px
+        background: url('img/close.svg') no-repeat center
+        top: 50%
+        transform: translateY(-50%)
+        right: 15px
+.btn
+    display: block
+    border: none
+    background: $blue
+    color: $white
+    padding: 14px 60px
+    border-radius: 8px
+    margin: 0 auto
+    cursor: pointer
+    tenasition: background .15s 
+    width: fit-content
+    &:hover 
+        background: $medium-blue
+@import './sass/_filters'
+@import './sass/_sort'
+@import './sass/_catalogCard'
+@import './sass/_pagination'
